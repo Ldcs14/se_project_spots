@@ -1,0 +1,23 @@
+.footer {
+  background-color: #fcf5e5;
+}
+
+.footer__copyright {
+  width: 104px;
+  height: 16px;
+  margin: 0 668px 0;
+  padding-bottom: 60px;
+  white-space: nowrap;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 1;
+  font-weight: normal;
+  line-height: 1;
+  color: #212121;
+  opacity: 70%;
+}
+
+@media screen and (max-width: 627px) {
+  .footer__copyright {
+    margin: 0 108px 0;
+  }
+}

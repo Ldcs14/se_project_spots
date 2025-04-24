@@ -1,0 +1,14 @@
+.header {
+  background-color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  color: #212121;
+  font-family: "DM Mono", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.header__logo {
+  width: 94px;
+  height: 26px;
+}
