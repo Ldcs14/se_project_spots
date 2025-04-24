@@ -16,4 +16,4 @@ A website to post interesting spots
 
 This webpage is deployed to GiHub Pages
 
-- Deployment Link:
+- [Deployment Link](https://ldcs14.github.io/se_project_spots_LC/)
