@@ -3,21 +3,14 @@
 }
 
 .footer__copyright {
-  width: 104px;
-  height: 16px;
-  margin: 0 668px 0;
-  padding-bottom: 60px;
+  margin: 0;
+  padding: 60px 0 60px 0;
   white-space: nowrap;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-size: 1;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1;
   color: #212121;
   opacity: 70%;
-}
-
-@media screen and (max-width: 627px) {
-  .footer__copyright {
-    margin: 0 108px 0;
-  }
+  text-align: center;
 }

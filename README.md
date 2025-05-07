@@ -1,5 +1,7 @@
 # Spots
 
+- [Video Link](https://drive.google.com/file/d/1vcU_d87YhIp-kn3cOzXv4zipN2mfVGLO/view?usp=sharing)
+
 ## Description
 
 A website to post interesting spots
