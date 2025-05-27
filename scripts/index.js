@@ -53,8 +53,8 @@ function handleEditProfileSubmit(evt) {
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
-  postImageEl.textContent = newPostCardImageInput.value;
-  postCaptionEl.textContent = newPostCardCaptionInput.value;
+  console.log(newPostCardImageInput.value);
+  console.log(newPostCardCaptionInput.value);
   editProfileModal.classList.remove("modal_is-opened");
 }
 
