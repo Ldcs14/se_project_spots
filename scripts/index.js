@@ -35,8 +35,6 @@ editProfileCloseBtn.addEventListener("click", function () {
 });
 
 newPostBtn.addEventListener("click", function () {
-  newPostCardImageInput.value = postImageEl.textContent;
-  newPostCardCaptionInput.value = postCaptionEl.textContent;
   newPostModal.classList.add("modal_is-opened");
 });
 
