@@ -124,4 +124,8 @@
     max-width: none;
     width: 100%;
   }
+
+  .modal__container {
+    padding: 12px;
+  }
 }
