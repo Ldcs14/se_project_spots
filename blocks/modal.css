@@ -120,6 +120,13 @@
     font-size: 16px;
   }
 
+  .modal__close-btn {
+    background-position: center;
+    width: 22.63px;
+    height: 22.63px;
+    top: 36px;
+  }
+
   .modal__submit-btn {
     max-width: none;
     width: 100%;
