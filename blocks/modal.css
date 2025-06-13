@@ -35,12 +35,14 @@
   position: absolute;
   top: 32px;
   right: 50px;
-  width: 40px;
-  height: 40px;
   padding: 0;
   border: none;
   background-image: url(../images/Close_Icon.svg);
   background-color: transparent;
+  width: 22.63px;
+  height: 22.63px;
+  background-size: 35px 35px;
+  background-position: center;
 }
 
 .modal__close-btn:hover {
@@ -121,10 +123,8 @@
   }
 
   .modal__close-btn {
-    background-position: center;
-    width: 22.63px;
-    height: 22.63px;
-    top: 36px;
+    top: 22px;
+    right: 12px;
   }
 
   .modal__submit-btn {
