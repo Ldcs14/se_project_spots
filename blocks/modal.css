@@ -11,12 +11,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 0 10px;
 }
 
-.modal_is-opened {
-  visibility: visible;
-  opacity: 1;
+.modal_type_preview {
+  padding: 0 16px;
 }
 
 .modal__container {
@@ -27,6 +26,11 @@
   background-color: #fff;
   padding: 32px 50px;
   position: relative;
+}
+
+.modal_is-opened {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__close-btn {
@@ -43,6 +47,16 @@
   height: 22.63px;
   background-size: 35px 35px;
   background-position: center;
+}
+
+.modal__close-btn_type_preview {
+  color: #fff;
+  top: 0;
+  right: -52.5px;
+}
+
+/*add hover to preview */
+.modal__close-btn_type_preview:hover {
 }
 
 .modal__close-btn:hover {
@@ -108,18 +122,44 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 627px) {
+.modal__image-container {
+  position: relative;
+}
+
+.modal__image {
+  max-width: 80vw;
+  max-height: 80vh;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+
+.modal__caption {
+  /* fix fonts */
+  color: white;
+  background-color: #212121;
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-weight: 500px;
+  line-height: 120%;
+  size: 20px;
+  letter-spacing: 0%;
+}
+
+@media screen and (max-width: 480px) {
   .modal__title {
-    margin: 0 0 24px;
     font-size: 20px;
   }
 
   .modal__input {
     font-size: 16px;
+    margin-bottom: 24px;
   }
 
   .modal__input::placeholder {
     font-size: 16px;
+    margin-bottom: 24px;
   }
 
   .modal__close-btn {
@@ -133,6 +173,17 @@
   }
 
   .modal__container {
-    padding: 12px;
+    padding: 22px 12px 12px;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .modal__close_type_preview {
+    top: -48px;
+    right: 0;
+  }
+
+  .modal__image {
+    max-width: unset;
   }
 }
