@@ -1,7 +1,7 @@
 .modal {
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.5s linear;
+  transition: visibility 0.3s, opacity 0.3s ease-in;
   background-color: #00000080;
   position: fixed;
   top: 0;
@@ -35,7 +35,6 @@
 
 .modal__close-btn {
   cursor: pointer;
-  opacity: 0.4;
   position: absolute;
   top: 32px;
   right: 50px;
@@ -49,18 +48,18 @@
   background-position: center;
 }
 
+.modal__close-btn:hover {
+  opacity: 1;
+}
+
 .modal__close-btn_type_preview {
-  color: #fff;
+  background-image: url(../images/Close-preview.svg);
   top: 0;
   right: -52.5px;
 }
 
-/*add hover to preview */
 .modal__close-btn_type_preview:hover {
-}
-
-.modal__close-btn:hover {
-  opacity: 1;
+  opacity: 0.4;
 }
 
 .modal__title {
@@ -95,6 +94,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
+  cursor: pointer;
 }
 
 .modal__input::placeholder {
@@ -119,7 +119,7 @@
 }
 
 .modal__submit-btn:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .modal__image-container {
@@ -136,14 +136,18 @@
 }
 
 .modal__caption {
-  /* fix fonts */
   color: white;
   background-color: #212121;
+  margin: 0;
+  padding: 4px 8px;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 10px);
   border-radius: 8px;
-  font-family: "Poppins";
-  font-weight: 500px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
   line-height: 120%;
-  size: 20px;
+  font-size: 20px;
   letter-spacing: 0%;
 }
 
@@ -154,7 +158,6 @@
 
   .modal__input {
     font-size: 16px;
-    margin-bottom: 24px;
   }
 
   .modal__input::placeholder {
@@ -178,12 +181,16 @@
 }
 
 @media screen and (max-width: 627px) {
-  .modal__close_type_preview {
+  .modal__close-btn_type_preview {
     top: -48px;
     right: 0;
   }
 
   .modal__image {
     max-width: unset;
+  }
+
+  .modal__caption {
+    font-size: 16px;
   }
 }

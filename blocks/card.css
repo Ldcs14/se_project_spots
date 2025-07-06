@@ -11,6 +11,7 @@
   object-fit: cover;
   display: block;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .card__content {
@@ -80,7 +81,7 @@
   opacity: 0.4;
 }
 
-.card @media screen and (max-width: 627px) {
+@media screen and (max-width: 627px) {
   .card__title {
     max-width: 250px;
     font-size: 16px;
