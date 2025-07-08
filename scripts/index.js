@@ -142,6 +142,7 @@ newPostForm.addEventListener("submit", function (evt) {
   };
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
+  newPostForm.reset();
 
   newPostModal.classList.remove("modal_is-opened");
 });
