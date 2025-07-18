@@ -154,12 +154,22 @@ previewModal.addEventListener("click", (event) => {
   }
 });
 
-// i tried to make all modals close by clicking overlay with one set of code but it failed
-// modalBackdrop.addEventListener("click", (event) => {
-// if (event.target === modalBackdrop) {
-// closeModal(modalBackdrop);
-// }
-// });
+function handleEscape(evt) {
+  if (evt.key === "Escape") {
+    const openedModal = document.querySelector(".modal_is-opened");
+    if (openedModal) closeModal(openedModal);
+  }
+}
+
+function openModal(modal) {
+  modal.classList.add("modal_is-opened");
+  document.addEventListener("keydown", handleEscape);
+}
+
+function closeModal(modal) {
+  modal.classList.remove("modal_is-opened");
+  document.removeEventListener("keydown", handleEscape);
+}
 
 editProfileForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
