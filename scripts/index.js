@@ -63,6 +63,8 @@ const previewCloseBtn = previewModal.querySelector(".modal__close-btn");
 const previewImageEl = previewModal.querySelector(".modal__image");
 const previewCaption = previewModal.querySelector(".modal__caption");
 
+// const modalBackdrop = document.querySelector(".modal");
+
 const cardTemplate = document
   .querySelector("#card-template")
   .content.querySelector(".card");
@@ -111,8 +113,10 @@ editProfileBtn.addEventListener("click", function () {
   resetValidation(
     editProfileForm,
     [editProfileNameInput, editProfileDescriptionInput],
+    editProfileModal.querySelector(settings.submitButtonSelector),
     settings
   );
+
   openModal(editProfileModal);
 });
 
@@ -131,6 +135,31 @@ newPostBtn.addEventListener("click", function () {
 newPostCloseBtn.addEventListener("click", function () {
   closeModal(newPostModal);
 });
+
+editProfileModal.addEventListener("click", (event) => {
+  if (event.target === editProfileModal) {
+    closeModal(editProfileModal);
+  }
+});
+
+newPostModal.addEventListener("click", (event) => {
+  if (event.target === newPostModal) {
+    closeModal(newPostModal);
+  }
+});
+
+previewModal.addEventListener("click", (event) => {
+  if (event.target === previewModal) {
+    closeModal(previewModal);
+  }
+});
+
+// i tried to make all modals close by clicking overlay with one set of code but it failed
+// modalBackdrop.addEventListener("click", (event) => {
+// if (event.target === modalBackdrop) {
+// closeModal(modalBackdrop);
+// }
+// });
 
 editProfileForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
